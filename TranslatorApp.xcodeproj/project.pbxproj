@@ -16,6 +16,7 @@
 		A9A4DB7327DFAB410087863F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9A4DB7127DFAB410087863F /* LaunchScreen.storyboard */; };
 		A9A4DB7B27DFACC00087863F /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A4DB7A27DFACBF0087863F /* HistoryViewController.swift */; };
 		A9A4DB7D27DFC2A00087863F /* SecondViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A4DB7C27DFC2A00087863F /* SecondViewCell.swift */; };
+		A9BEC36527E5D851005E4065 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = A9BEC36327E5D851005E4065 /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,10 @@
 		A9A4DB7427DFAB410087863F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A9A4DB7A27DFACBF0087863F /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
 		A9A4DB7C27DFC2A00087863F /* SecondViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewCell.swift; sourceTree = "<group>"; };
+		A9BEC36227E5D78C005E4065 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		A9BEC36427E5D851005E4065 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = TranslatorApp/Base.lproj/Localizable.strings; sourceTree = "<group>"; };
+		A9BEC36927E5D8AE005E4065 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = TranslatorApp/ru.lproj/Localizable.strings; sourceTree = "<group>"; };
+		A9BEC36B27E5DC0B005E4065 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = TranslatorApp/en.lproj/Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +63,7 @@
 		A9A4DB5A27DFAB400087863F = {
 			isa = PBXGroup;
 			children = (
+				A9BEC36327E5D851005E4065 /* Localizable.strings */,
 				A9A4DB6527DFAB400087863F /* TranslatorApp */,
 				A9A4DB6427DFAB400087863F /* Products */,
 				0A880152F9ECE65CBE205A27 /* Pods */,
@@ -141,6 +147,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ru,
 			);
 			mainGroup = A9A4DB5A27DFAB400087863F;
 			productRefGroup = A9A4DB6427DFAB400087863F /* Products */;
@@ -158,6 +165,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A9A4DB7327DFAB410087863F /* LaunchScreen.storyboard in Resources */,
+				A9BEC36527E5D851005E4065 /* Localizable.strings in Resources */,
 				A9A4DB7027DFAB410087863F /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -227,8 +235,19 @@
 			isa = PBXVariantGroup;
 			children = (
 				A9A4DB7227DFAB410087863F /* Base */,
+				A9BEC36227E5D78C005E4065 /* ru */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		A9BEC36327E5D851005E4065 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A9BEC36427E5D851005E4065 /* Base */,
+				A9BEC36927E5D8AE005E4065 /* ru */,
+				A9BEC36B27E5DC0B005E4065 /* en */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -238,6 +257,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
@@ -299,6 +319,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";

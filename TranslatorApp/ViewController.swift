@@ -13,13 +13,13 @@ class ViewController: UIViewController {
     let model = HistoryModel()
     let second = HistoryViewController()
     
-    var firstLanguage = "en"
-    var secondLanguage = "ru"
-        
+    var firstLanguage = "ru"
+    var secondLanguage = "en"
+    
     let historyButton: UIButton = {
         let button = UIButton()
         button.layer.cornerRadius = 4
-        button.setTitle("See History", for: .normal)
+        button.setTitle(NSLocalizedString("See History", comment: ""), for: .normal)
         button.backgroundColor = UIColor(red: 0.451, green: 0.882, blue: 0.882, alpha: 1)
         button.addTarget(self, action: #selector(didChangeView), for: .touchUpInside)
         button.translatesAutoresizingMaskIntoConstraints = false
@@ -35,7 +35,7 @@ class ViewController: UIViewController {
     }()
     
     private let imageView1 : UIImageView = {
-        let imgView = UIImageView(image: UIImage(named: "russia"))
+        let imgView = UIImageView(image: UIImage(named: NSLocalizedString("united-kingdom", comment: "")))
         imgView.contentMode = .scaleAspectFit
         imgView.clipsToBounds = true
         imgView.translatesAutoresizingMaskIntoConstraints = false
@@ -43,7 +43,7 @@ class ViewController: UIViewController {
     }()
     
     private let imageView2 : UIImageView = {
-        let imgView = UIImageView(image: UIImage(named: "united-kingdom"))
+        let imgView = UIImageView(image: UIImage(named: NSLocalizedString("russia", comment: "")))
         imgView.contentMode = .scaleAspectFit
         imgView.clipsToBounds = true
         imgView.translatesAutoresizingMaskIntoConstraints = false
@@ -63,7 +63,7 @@ class ViewController: UIViewController {
     private let label2: UILabel = {
         let lbl = UILabel()
         lbl.backgroundColor = .white
-        lbl.text = "Translation"
+        lbl.text = NSLocalizedString("Translation", comment: "")
         lbl.textAlignment = .center
         lbl.textColor = UIColor(red: 0.451, green: 0.882, blue: 0.882, alpha: 1)
         lbl.font = UIFont(name: "Roboto-Medium", size: 18)
@@ -84,7 +84,7 @@ class ViewController: UIViewController {
     
     private let textField: UITextField = {
         let textField = UITextField()
-        textField.placeholder = "Enter text here"
+        textField.placeholder = NSLocalizedString("Enter text here", comment: "")
         textField.textAlignment = .center
         return textField
     }()
@@ -126,15 +126,15 @@ class ViewController: UIViewController {
     @objc func didChangeImage() {
         rotateButton.rotate()
         
-        if imageView1.image == UIImage(named: "russia") {
-            imageView1.image = UIImage(named: "united-kingdom")
-            imageView2.image = UIImage(named: "russia")
-            
-            firstLanguage = "ru"
-            secondLanguage = "en"
-        } else {
+        if imageView1.image == UIImage(named: "united-kingdom") {
             imageView1.image = UIImage(named: "russia")
             imageView2.image = UIImage(named: "united-kingdom")
+            
+            firstLanguage = "en"
+            secondLanguage = "ru"
+        } else {
+            imageView2.image = UIImage(named: "russia")
+            imageView1.image = UIImage(named: "united-kingdom")
         }
     }
     

@@ -1,0 +1,13 @@
+/* 
+  Localizable.strings
+  TranslatorApp
+
+  Created by Eldiiar on 19/3/22.
+  
+*/
+
+"russia" = "united-kingdom";
+"united-kingdom" = "russia";
+"See History" = "Посмотреть историю";
+"Enter text here" = "Введите текст";
+"Translation" = "Перевод";

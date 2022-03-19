@@ -89,7 +89,6 @@ class HistoryViewController: UIViewController, UITableViewDelegate, UITableViewD
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! SecondViewCell
         let item = translated?[indexPath.section]
         cell.setUp(first: item!.firstLanguage, second: item!.secondLanguage)
-        
         cell.layer.cornerRadius = 4
         cell.layer.shadowOpacity = 1
         cell.layer.shadowRadius = 4
